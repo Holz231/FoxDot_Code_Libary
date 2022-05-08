@@ -1,0 +1,2 @@
+Samples.addPath('/path/to/samples')
+s1 >> loop('quack')
