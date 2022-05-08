@@ -1,0 +1,17 @@
+>>> def odd_test(num):
+...    return 5 if num % 2 == 1 else 3
+
+>>> my_odd_gen = odd_test(PRand(0, 10))
+>>> print(my_odd_gen)
+
+
+The num % 2 returns a new PRand and not a number, so when it is asked “is this equal to 1?” it will always return False, and consequently, 3. 
+To actually apply the function to the values in our Pattern Generator, we need to use the transform method and supply it with the function.
+
+
+>>> my_odd_gen = PRand(0, 10).transform(odd_test)
+>>> print(my_odd_gen)
+PRand(lambda None)
+
+>>> print(my_odd_gen[:10])
+P[3, 3, 3, 5, 3, 3, 5, 3, 5, 3]
