@@ -1,3 +1,24 @@
+def odd_test(num):
+    return 5 if num % 2 == 1 else 3
+    
+    And here is my TimeVar:
+
+my_var = var([0, 1, 2, 3])
+
+If I call odd_test(my_var) then it will return its output (3 or 5) based on the current value of my_var and the value will stay the same,
+even if my_var changes. Try it yourself to see. To make sure you always return the correct value given my_var as an input,
+you need to call the transform method, which takes a callable object, usually a function, as an input. Note that this callable function can only take
+one argument as an input.
+
+my_output = my_var.transform(odd_test)
+
+Now my_output will always be 5 whenever my_var is odd and 3 whenever it is even. If you are an advanced Python user you can even create a class with a __call__() method to create a callable object and use that as an input for the transform method to hold some sort of state between transformations e.g. count the number of times it was called and change the value every 10 times.
+
+
+
+
+
+
 >>> def odd_test(num):
 ...    return 5 if num % 2 == 1 else 3
 
