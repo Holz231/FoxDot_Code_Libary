@@ -5,3 +5,17 @@ P[P(3), P(1, 2), P(8, 9, 10), P(4, 5, 6, 7)]
 # Set all even numbers to 0
 >>> print(P[0, 1, 2, 3].map(lambda x: 0 if x % 2 == 0 else x))
 P[0, 1, 0, 3]
+
+
+>>> my_odd_gen = PRand(0, 10).transform(odd_test)
+>>> print(my_odd_gen)
+PRand(lambda None)
+
+>>> print(my_odd_gen[:10])
+P[3, 3, 3, 5, 3, 3, 5, 3, 5, 3]
+
+
+
+# Can also use functions in place of method names
+>>> print(P[0, 1, 2, 3].offlayer(lambda x: (x * 2) + 1))
+P[P^(0, 1), P^(1, 3), P^(2, 5), P^(3, 7)]
