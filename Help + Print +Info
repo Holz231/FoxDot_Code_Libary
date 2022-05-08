@@ -1,1 +1,24 @@
 
+print(SynthDefs)
+
+print(Player.get_attributes())
+
+print(classes(Patterns.Sequences))
+
+print(FxList)
+
+print(Scale.names())
+
+print(Player.get_fxs())
+
+print(Player("wobblebass").info())
+
+print(Player("wobblebass").get_attributes())
+
+print(Player("wobblebass").get_extra_attributes())
+
+
+
+help(Pattern)
+
+help(Patterns.Sequences)
