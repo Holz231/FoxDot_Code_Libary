@@ -26,3 +26,15 @@ Here’s how you can implement the odd_test transformation using map and a lambd
 
 p1 >> pads([0, 4, 5, 3], dur=4)
 p2 >> pluck(p1.pitch.map({lambda x: x % 2 == 1: 5}, default=3)
+
+
+
+
+
+def some_func(index):
+    return int(index / 4)
+
+print(GeneratorPattern.from_func(some_func)[:10])
+
+# We can use lambdas too
+print(GeneratorPattern.from_func(lambda
