@@ -1,3 +1,16 @@
+Installation:
+
+cd C:\Users\Gott\Desktop\foxdot-killa_features\
+
+python setup.py install
+
+- python setup.py install
+
+
+- pip3 uninstall foxdot
+
+
+
 https://github.com/Qirky/FoxDot/tree/master/FoxDot/demo
 
 https://foxdot.org/docs/making-your-first-sounds/
