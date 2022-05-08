@@ -4,3 +4,9 @@ pattern1 = var([0,0,0,-1,0,0,0,1],[1])
 two_patterns = Pvar([pattern0,pattern1],[8])
 
 x2 >>dbass(two_patterns)
+
+
+
+a = var([0,4,5,3], 4)
+b1 >> bass(a, dur=PDur(3,8))
+p1 >> pads(a + (0,2), dur=PDur(7,16))
