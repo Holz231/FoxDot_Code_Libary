@@ -3,6 +3,15 @@ x if y else z
 
 
 
+>>> def odd_test(num):
+...     """ Convert an even number to 3 and an odd to 5 """
+...     return 5 if num % 2 == 1 else 3
+
+
+
+
+
+
 # Set all even numbers to 0
 >>> print(P[0, 1, 2, 3].map(lambda x: 0 if x % 2 == 0 else x))
 P[0, 1, 0, 3]
