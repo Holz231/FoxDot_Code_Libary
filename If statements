@@ -1,1 +1,6 @@
 x if y else z
+
+
+# Set all even numbers to 0
+>>> print(P[0, 1, 2, 3].map(lambda x: 0 if x % 2 == 0 else x))
+P[0, 1, 0, 3]
