@@ -1,0 +1,6 @@
+pattern0 = var([0,0,0,2,0,0,0-2],[1])
+pattern1 = var([0,0,0,-1,0,0,0,1],[1])
+
+two_patterns = Pvar([pattern0,pattern1],[8])
+
+x2 >>dbass(two_patterns)
