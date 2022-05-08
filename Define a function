@@ -1,0 +1,17 @@
+def key_change():
+    Scale.default = "minor"
+    Root.default = 4
+
+
+
+def update(key, bpm=None):
+    Root.default = int(key)
+    if bpm is not None:
+        Clock.bpm = bpm
+    return
+
+
+
+>>> def odd_test(num):
+...     """ Convert an even number to 3 and an odd to 5 """
+...     return 5 if num % 2 == 1 else 3
