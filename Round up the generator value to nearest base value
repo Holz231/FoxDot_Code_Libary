@@ -1,0 +1,11 @@
+you can hack the class GeneratorPattern in FoxDot\lib\Patterns\Main.py line 1493 add     
+def rnd(self, base=2):
+        """ Round up the generator value to nearest base value"""
+        return self.transform(lambda value: round(base * round(float(value) / base),3))
+        
+   print(PWhite(0,12).rnd(2)[:16]), very useful
+   
+
+x if y else z
+
+x if (0)==12 then 0
