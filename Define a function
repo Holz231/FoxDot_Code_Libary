@@ -1,3 +1,18 @@
+
+# You can create your own function, and decorate it, to be able
+# to use it in an .every on a Player object
+@PlayerMethod
+def test(self):
+    print(self.degree)
+
+p1 >> pluck([0,4]).every(3, "test")
+
+# And cancel it with
+p1.never("test")
+
+
+
+
 def key_change():
     Scale.default = "minor"
     Root.default = 4
