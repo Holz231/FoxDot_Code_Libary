@@ -8,3 +8,12 @@ def rnd(self, base=2):
    print(PWhite(0,12).rnd(2)[:16])
 
    
+#OR
+
+
+>>> generator = PWalk() / 2
+>>> print(generator[:10])
+P[0.0, -0.5, -1.0, -1.5, -1.0, -1.5, -1.0, -1.5, -2.0, -2.5]
+>>> generator = generator.transform(int)
+>>> print(generator[:10])
+P[0, 0, -1, -1, -1, -1, -1, -1, -2, -2]
