@@ -34,3 +34,14 @@ verse()
 Terms
 Privacy
 Security
+
+
+
+
+def some_func(index):
+    return int(index / 4)
+
+print(GeneratorPattern.from_func(some_func)[:10])
+
+# We can use lambdas too
+print(GeneratorPattern.from_func(lambda
