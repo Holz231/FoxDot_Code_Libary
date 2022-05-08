@@ -1,0 +1,4 @@
+pat = P[0, 1, 2]
+for n in range(20000):
+    pat.extend([0,1,2])
+print(pat)
