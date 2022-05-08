@@ -5,7 +5,3 @@ def rnd(self, base=2):
         
    print(PWhite(0,12).rnd(2)[:16]), very useful
    
-
-x if y else z
-
-x if (0)==12 then 0
