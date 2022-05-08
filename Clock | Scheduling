@@ -25,7 +25,29 @@ def chorus():
     d1 >> play("x-o-")
     Clock.future(16, verse)
 verse()
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
+
+
+
+# These are equivalent
+Clock.schedule(lambda: print("hello"), Clock.now() + 4)
+Clock.future(4, lambda: print("hello"))
+
+
+
+Clock.every(4, lambda: print("hello"))
+
+
+
+
+# Get the current clock and add 2.  Useful for scheduling.
+print(Clock.now() + 2)
+
+# Issue command on the next bar
+nextBar(Clock.clear)
+
+# With a decorator
+@nextBar
+def change():
+    Root.default=4
+    Scale.default="minor"
+
