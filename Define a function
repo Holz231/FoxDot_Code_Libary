@@ -54,5 +54,4 @@ def some_func(index):
 
 print(GeneratorPattern.from_func(some_func)[:10])
 
-# We can use lambdas too
-print(GeneratorPattern.from_func(lambda
+
