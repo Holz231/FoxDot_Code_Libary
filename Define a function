@@ -45,10 +45,6 @@ def chorus():
     d1 >> play("x-o-")
     Clock.future(16, verse)
 verse()
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
 
 
 
