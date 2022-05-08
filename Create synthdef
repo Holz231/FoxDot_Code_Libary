@@ -1,0 +1,24 @@
+# Create a SynthDef named 'example' (using the same variable name as the SynthDef name is a good idea)
+example = SynthDef("example")
+
+# Create the oscillator (osc) using a sine wave
+example.osc = SinOsc.ar(ex.freq)
+
+# And give it a percussive sound envelope (env)
+example.env = Env.perc()
+
+# Finally, store it!
+example.add()
+
+# How to create a SynthDef
+
+with SynthDef("pads") as pads:
+	pads.osc = SinOsc.ar(pads.freq)
+	pads.env = Env.perc()
+
+# Equivalent to
+
+pads = SynthDef("pads")
+pads.osc = SinOsc.ar(pads.freq)
+pads.env = Env.perc()
+pads.add()
