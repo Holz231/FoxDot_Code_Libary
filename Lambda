@@ -19,3 +19,10 @@ P[3, 3, 3, 5, 3, 3, 5, 3, 5, 3]
 # Can also use functions in place of method names
 >>> print(P[0, 1, 2, 3].offlayer(lambda x: (x * 2) + 1))
 P[P^(0, 1), P^(1, 3), P^(2, 5), P^(3, 7)]
+
+
+
+Here’s how you can implement the odd_test transformation using map and a lambda function:
+
+p1 >> pads([0, 4, 5, 3], dur=4)
+p2 >> pluck(p1.pitch.map({lambda x: x % 2 == 1: 5}, default=3)
