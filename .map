@@ -1,3 +1,35 @@
+.map(mapping_dict, default=0)
+
+Instead of defining a function to return certain values as above, we can provide a mapping in the form of a Python dictionary.
+The mappings can be one-to-one values or functions. If a Player Key’s value is not in the dictionary, then the default value is returned.
+
+>>> p1 >> pads([0, 4, 5, 3], dur=4)
+>>> p2 >> pluck(p1.pitch.map({4: 1, 3: 0}, default=2))
+>>> print(p1.pitch, p2.pitch)
+0, 2
+>>> print(p1.pitch, p2.pitch)
+4, 1
+>>> print(p1.pitch, p2.pitch)
+5, 2
+>>> print(p1.pitch, p2.pitch)
+3, 0
+
+
+
+
+Here’s how you can implement the odd_test transformation using map and a lambda function:
+
+p1 >> pads([0, 4, 5, 3], dur=4)
+p2 >> pluck(p1.pitch.map({lambda x: x % 2 == 1: 5}, default=3)
+
+
+
+
+p1 >> pads([0, 4, 5, 3], dur=4)
+p2 >> pluck(p1.pitch.map({lambda x: x % 2 == 1: 5}, default=3)
+
+
+
 # Set all even numbers to 0
 >>> print(P[0, 1, 2, 3].map(lambda x: 0 if x % 2 == 0 else x))
 P[0, 1, 0, 3]
