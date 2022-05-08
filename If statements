@@ -5,8 +5,8 @@ x if y else z
 >>> print(P[0, 1, 2, 3].map(lambda x: 0 if x % 2 == 0 else x))
 P[0, 1, 0, 3]
 
-
->>> def odd_test(num):
+#Does not work, needs transform
+>>> def odd_test(num):  
 ...    return 5 if num % 2 == 1 else 3
 
 >>> my_odd_gen = odd_test(PRand(0, 10))
