@@ -15,3 +15,22 @@ def update(key, bpm=None):
 >>> def odd_test(num):
 ...     """ Convert an even number to 3 and an odd to 5 """
 ...     return 5 if num % 2 == 1 else 3
+
+
+
+
+def verse():
+    b1 >> bass([0,3], dur=4)
+    p1 >> pluck([0,4], dur=1/2)
+    d1 >> play("x--x--x-")
+    Clock.future(16, chorus)
+def chorus():
+    b1 >> bass([0,4,5,3], dur=4)
+    p1 >> pluck([0,4,7,9], dur=1/4)
+    d1 >> play("x-o-")
+    Clock.future(16, verse)
+verse()
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
