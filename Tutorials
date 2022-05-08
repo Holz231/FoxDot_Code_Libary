@@ -1,10 +1,9 @@
 Installation:
 
-cd C:\Users\Gott\Desktop\foxdot-killa_features\
-
-python setup.py install
+-cd C:\Users\Gott\Desktop\foxdot-killa_features\
 
 - python setup.py install
+
 
 
 - pip3 uninstall foxdot
