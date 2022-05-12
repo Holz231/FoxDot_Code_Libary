@@ -1,0 +1,7 @@
+seedo  = PxRand(1,20, seed = 4456)[:4]
+seedo0 = PxRand(50,100, seed = 26478)[:4]
+seedo1 = PxRand(1,15, seed = 37868596)[:4]
+seedo2  = PxRand(30,70, seed = 378924356)[:4]
+
+p1 >> loop("C:/Users/Gott/Desktop/xxx", Pvar([seedo,seedo0,seedo1,seedo2],4), dur=1, amp=2.25)
+p1.amp=var([1.5,0],[16,0.75,12,0.5,8,0.25])
