@@ -1,0 +1,16 @@
+seedo  = PRand(["x"],seed=5)[:4]
+seedo0 = PRand(["x"],seed=5)[:4]
+seedo1 = PRand(["x"],seed=5)[:4]
+seedo2  = PRand(["x"],seed=5)[:4]
+
+samp0 = PxRand(0,4, seed=454)[:4]
+samp1 = PxRand(0,4,seed=78)[:4]
+samp2 = PxRand(0,4,seed=789)[:4]
+samp3 = PxRand(0,4,seed=456)[:4]
+
+
+saz = Pvar([samp0,samp1,samp2,samp3],4)
+sez = Pvar([seedo,seedo0,seedo1,seedo2],4)
+
+
+p2 >>play(sez,amp=2,sdb=0, sample = saz)
